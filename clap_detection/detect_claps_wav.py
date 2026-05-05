@@ -1,13 +1,3 @@
-"""
-Detect clap peaks in WAV audio files using amplitude-based peak thresholding.
-
-This script loads one or more WAV audio files, converts stereo audio to mono if needed,
-computes absolute amplitude values, and detects strong peaks based on a strict threshold
-derived from the highest amplitude in the signal.
-
-Author: Yasaman Piroozfar
-License: MIT
-"""
 import os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -94,7 +84,6 @@ def plot_all_audio_files(audio_files, target_sample_rate=16000, segment_duration
     plt.show()
 
 if __name__ == "__main__":
-    # Example usage:
     # Replace these paths with your own WAV files.
 
     audio_files = [
